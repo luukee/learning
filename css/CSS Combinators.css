@@ -1,0 +1,28 @@
+CSS Combinators
+ - create rules that target siblings, 
+---
+
+Direct child selector (>)
+- targets a direct child of an element. "div" in example below selects only form elements that are its direct children, not any descendants.
+
+div > form {
+
+}
+
+---
+
+Adjacent sibling combinator (+)
+- targets immediate siblings.
+
+button + button {
+	padding-left: 1em;
+}
+
+---
+
+General Sibling Combinator (~)
+- target all specified siblings that follow an element
+
+h1 ~ label {
+
+}

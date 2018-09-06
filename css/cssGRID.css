@@ -1,0 +1,23 @@
+grid container
+
+grid item
+
+grid lines
+- rows
+- columns
+
+grid-template-columns
+grid-template-rows
+
+.grid {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 100px 200px;
+/*
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+*/
+  grid-gap: 1em;
+}
+

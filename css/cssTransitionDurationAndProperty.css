@@ -1,0 +1,49 @@
+/* =================================
+  Links
+==================================== */
+
+/*List of animatiable CSS properties: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties*/
+/*Animatable properties – W3C: https://www.w3.org/TR/css3-transitions/#animatable-properties*/
+/*Animatable properties demo – by Lea Verou: http://leaverou.github.io/animatable/*/
+/*transition-property – MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property*/
+
+/* =================================
+  Button Transitions
+==================================== */
+
+.button {
+	color: #4489ca;
+  border: 2px solid;
+	background: #fff;
+/*  tells the browser the properties animate */
+/*  dont use "all" its hard on the browser b/c its checking every property*/
+  transition-property: background, border-radius, color;
+/*  define length of time */
+  transition-duration: .4s, .8s, .4s; /* can also use 400ms */
+
+}
+
+.button:hover {
+  color: #fff;
+  background: #4a89ca;
+  border-radius: 1em;
+}
+
+.button:active {
+  background: #a33830;
+}
+
+
+/* =================================
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+  opacity: 0;
+  transition-duration: .4s;
+  transition-property: opacity;
+}
+
+.photo-overlay:hover {
+  opacity: 1;
+}

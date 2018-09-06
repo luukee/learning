@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: .4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+header {
+  border-bottom: 2px solid rgb(105, 199, 115);
+  margin-bottom: 1rem;
+}
+
+nav {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+nav li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+.post {
+  border-bottom: 2px solid rgb(105, 199, 115);
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #2D7C51;
+  color: white;
+  padding-top: 2rem;
+}

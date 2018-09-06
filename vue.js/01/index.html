@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{message}}
+
+        <span v-if="seen">Now you see me</span>
+        <!-- v-if is a directive -->
+
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+
+        <!-- allow users to interact with the DOM -->
+        <!-- event listener(click) that will invoke methods(reverseMessage) on the vue instance -->
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

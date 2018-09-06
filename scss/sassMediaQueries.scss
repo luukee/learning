@@ -1,0 +1,22 @@
+// media queries
+// http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+$phone: "only screen and (max-width : 30em)";
+$tablet: "only screen and (max-width: 767px)";
+$medium: "only screen and (min-width: 768px)";
+$large: "only screen and (min-width: 992px)";
+$xlarge: "only screen and (min-width: 1200px)";
+
+.pre-pre-footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 15px;
+    @media #{$medium} {
+        width: 750px;
+    }
+    @media #{$large} {
+        width: 970px;
+    }
+    @media #{$xlarge} {
+        width: 1200px;
+    }
+}
